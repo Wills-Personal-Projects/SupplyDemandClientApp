@@ -117,8 +117,19 @@
               "devServerTarget": "SupplyDemandClientApp:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@jefiozie/ngx-aws-deploy:deploy",
+          "options": {
+            "region": "us-west-1",
+            "bucket": "supplydemandclient",
+            "secretAccessKey": " /0ztDDdMA3vRY+LRAOqjtaZIwR0UoVEZbCRDcZRr",
+            "accessKeyId": "AKIAIK23GSGGZY4MSFEQ",
+            "subFolder": "supplydemandclientdeploy"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "SupplyDemandClientApp"
 }
